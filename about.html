@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Home Upgrades</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="Home Upgrades Logo">
+        <h2>HOME UPGRADES</h2>
+      </div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about-bg">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Enhancing homes with style, comfort, and elegance.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>
+        Home Upgrades is dedicated to transforming living spaces through professional curtain making,
+        expert blinds installation, and beautiful interior decoration. We combine creativity,
+        quality craftsmanship, and attention to detail to give every home a refined and welcoming look.
+      </p>
+
+      <p>
+        Our mission is to help clients create interiors that reflect their style while delivering comfort,
+        beauty, and functionality. Whether you want modern blinds, elegant curtains, or full interior styling,
+        we are committed to excellent results.
+      </p>
+
+      <div class="about-grid">
+        <img src="images/about1.jpg" alt="Curtain design">
+        <img src="images/about2.jpg" alt="Blinds installation">
+        <img src="images/about3.jpg" alt="Interior decoration">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Home Upgrades. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+  </script>
+
+  <script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

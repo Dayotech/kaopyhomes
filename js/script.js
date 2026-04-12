@@ -1,0 +1,1 @@
+console.log("Kaopy Home Upgrades site loaded");
