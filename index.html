@@ -1,57 +1,76 @@
- <!DOCTYPE html>
+<!-- =======================
+UPDATED INDEX.HTML (MAIN PAGE)
+======================= -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaopy Home Upgrades - Home</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaopy Home</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header class="header">
-  <div class="container nav">
-    <div class="logo">
-      <img src="images/logo.png" alt="Home Upgrades Logo">
-      <h2>HOME UPGRADES</h2>
-    </div>
 
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<!-- CONTACT / ENQUIRY SECTION -->
+<section id="contact">
+  <h2>Send Enquiry</h2>
+  <form id="whatsappForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+</section>
 
-    <nav class="nav-links" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+<!-- WHATSAPP SCRIPT -->
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-  <section class="hero home-bg">
-    <div class="container">
-      <h1>Beautiful Curtains & Interior Decor</h1>
-      <p>We transform homes with elegant curtains, blinds, and interior styling.</p>
-    </div>
-  </section>
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
 
-  <section class="container intro">
-    <h2>Welcome to Kaopy Home Upgrades</h2>
-    <p>
-      We specialize in custom curtains, blinds, window treatments, and home decoration
-      that bring beauty, comfort, and style into your living spaces.
-    </p>
-  </section>
+    let phoneNumber = "2348160690157";
 
-  <footer>
-    <p>Kaopy Home Upgrades © 2026</p>
-    <p>Produced by dayotech 2026</p>
-  </footer>
+    let whatsappMessage = `Hello, my name is ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 
-  <script src="js/script.js"></script>
+    let url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
-  <script>
-  function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("active");
-  }
+    window.open(url, "_blank");
+});
 </script>
+
 </body>
 </html>
+
+
+
+
+
+
+<!-- =======================
+DEPLOYMENT STEPS
+======================= -->
+
+1. Create a new folder on your PC:
+   kaopyhome-updated
+
+2. Copy all updated files into it
+
+3. Go to your GitHub repo
+
+4. Click "Add file" → "Upload files"
+
+5. Upload everything inside kaopyhome-updated
+
+6. Commit changes
+
+7. Go to Settings → Pages
+
+8. Ensure branch = main and root folder selected
+
+9. Your site updates automatically
+
+
+<!-- DONE -->

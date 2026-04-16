@@ -1,0 +1,72 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* FORM */
+#whatsappForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+#whatsappForm input,
+#whatsappForm textarea {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#whatsappForm button {
+  background: #25D366;
+  color: white;
+  padding: 12px;
+  border: none;
+}
+
+/* SERVICES */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  padding: 10px;
+}
+
+.service-card p {
+  padding: 0 10px 10px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .service-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .service-card img {
+    height: 200px;
+  }
+}
+
+
+ 
